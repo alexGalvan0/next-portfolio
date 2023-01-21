@@ -6,7 +6,7 @@ module.exports = {
 
   ],
   daisyui: {
-    themes: ["dark", "retro"],
+    themes: ["corporate", "business"],
   },
   theme: {
     extend: {},
