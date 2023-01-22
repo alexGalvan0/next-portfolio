@@ -3,17 +3,14 @@
 import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
-function NavBar() {
-    const [theme, setTheme] = useState<boolean>(false)
 
-    const changeTheme = (themeState:boolean) => {
-        if (themeState == true){
-            setTheme(false)
-        } else {
-            setTheme(true)
-        }
+function NavBar() {
+    const [theme, setTheme] = useState<string>('dark')
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
         console.log(theme)
-    }
+      };
     return (
         <div className='sticky top-0 z-50'>
             <div className="navbar bg-base-100">
@@ -30,8 +27,8 @@ function NavBar() {
                     </div>
                 </div>
                 <div className="navbar-end">
-                    <input onChange={() => changeTheme(theme)} type="checkbox" className="toggle toggle-info rounded-xl" />
-                    <Link className="btn btn-ghost normal-case text-xl" href='/'>AG</Link>
+                    <input onChange={toggleTheme} type="checkbox" className="toggle toggle-info rounded-xl" />
+                    <Link data-theme={theme} className="btn btn-ghost normal-case text-xl" href='/'>AG</Link>
                 </div>
 
             </div>
