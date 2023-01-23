@@ -39,7 +39,7 @@ export default function Home() {
 
       <div className="flex justify-center mt-10 p-10 bg-base-200">
         <div>
-          <div className="divider">TEHCNOLOGIES</div>
+          <div className="divider">TECHNOLOGIES</div>
           <div className="stats stats-vertical lg:stats-horizontal shadow">
 
             <div className="stat">
