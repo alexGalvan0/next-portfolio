@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 function About() {
     return (
-        <div>
-            <div className="hero min-h-screen bg-base-200">
+        <div className='pt-11 flex justify-center'>
+            <div className="bg-base-200 rounded-md">
                 <div className="hero-content flex-col lg:flex-row max-w-4xl">
                     <Image src="/../public/images/galvan-alex.jpeg" width={300} height={200} alt="alex galvan" className="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
+                    <div className='sm:text-center'>
                         <h1 className="text-5xl font-bold">About Me</h1>
                         <p className="py-6">My name is Alex Galvan and I have been
                             developing automations, tools and applications
@@ -15,7 +15,7 @@ function About() {
                             in Python and Javascript. Experience in using
                             React | Django | NextJS | React Native | and much more.
                             Feel free to reach out to see how I can contribute to your team.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary">CONTACT ME!</button>
                     </div>
                 </div>
             </div>
