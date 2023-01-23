@@ -7,7 +7,7 @@ import NavBar from '../components/NavBar'
 
 export default function Home() {
 
-  const [theme, setTheme] = useState<string>('light');
+  const [theme, setTheme] = useState<string>('dark');
 
   useEffect(() => {
     document.querySelector<any>('html').setAttribute('data-theme', theme)
@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div>
-      <NavBar setTheme={setTheme} />
+      <NavBar />
       <Hero />
       <About />
 
