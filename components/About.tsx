@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Contact from './Contact'
 
 function About() {
     return (
@@ -15,7 +16,7 @@ function About() {
                             in Python and Javascript. Experience in using
                             React | Django | NextJS | React Native | and much more.
                             Feel free to reach out to see how I can contribute to your team.</p>
-                        <button className="btn btn-primary">CONTACT ME!</button>
+                        <Contact />
                     </div>
                 </div>
             </div>
