@@ -26,7 +26,7 @@ function NavBar() {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a href={'#'}>Homepage</a></li>
                             <li><a href={'#about'}>About</a></li>
-                            <li><a href={'#'}>Projects</a></li>
+                            <li><a href={'#projects'}>Projects</a></li>
                         </ul>
                     </div>
                 </div>

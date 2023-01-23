@@ -16,7 +16,7 @@ export const projects:Array<object> = [
       imagePath: "./images/backend-bistro.jpg",
       title: "Restaurant Menu API",
       description: "Django API servecing a menu front end. Postgres database",
-      repoLink: "https://github.com/alexGalvan0/bistro-backend",
+      liveDemo: "https://github.com/alexGalvan0/bistro-backend",
     },
     {
       imagePath: "./images/tic-tac-toe.jpg",

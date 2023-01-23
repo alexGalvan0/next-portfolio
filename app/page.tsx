@@ -6,6 +6,7 @@ import About from '../components/About'
 import NavBar from '../components/NavBar'
 import Card from '../components/Card'
 import { projects } from '../projects'
+import Footer from '../components/Footer'
 
 
 type projectt = {
@@ -44,33 +45,35 @@ export default function Home() {
       </div> */}
 
       <div className="flex justify-center mt-10 p-10 bg-base-200">
-        <div className="stats stats-vertical lg:stats-horizontal shadow">
+        <div>
+          <div className="divider">TEHCNOLOGIES</div>
+          <div className="stats stats-vertical lg:stats-horizontal shadow">
 
-          <div className="stat">
+            <div className="stat">
+              <div className="stat-value">JAVASCRIPT</div>
+            </div>
 
-            <div className="stat-value">JAVASCRIPT</div>
+            <div className="stat">
+              <div className="stat-value">TYPESCRIPT</div>
+            </div>
 
-          </div>
+            <div className="stat">
+              <div className="stat-value">REACT</div>
+            </div>
 
-          <div className="stat">
-
-            <div className="stat-value">TYPESCRIPT</div>
-
-          </div>
-          <div className="stat">
-
-            <div className="stat-value">REACT</div>
-
-          </div>
-
-          <div className="stat">
-
-            <div className="stat-value">PYTHON</div>
+            <div className="stat">
+              <div className="stat-value">PYTHON</div>
+            </div>
 
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center mt-10 gap-4 align-middle ">
+
+
+      <div className="divider">PROJECTS</div>
+
+
+      <div id='projects' className="flex flex-wrap justify-center mt-10 gap-4 align-middle md:px-50 mb-72">
         {projects?.map((project) => (
           <Card key={project.title}
             title={project.title}
@@ -79,6 +82,7 @@ export default function Home() {
             description={project.description} />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
