@@ -4,7 +4,7 @@ import Form from './Form'
 function Footer() {
     return (
         <div>
-            <footer className="footer  p-10 bg-neutral text-neutral-content footer-center">
+            <footer className="footer  p-10 bg-neutral text-neutral-content flex">
                 <div className='flex '>
 
                     <span className="footer-title">Services</span>
