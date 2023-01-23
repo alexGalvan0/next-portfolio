@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function About() {
     return (
-        <div className='pt-11 flex justify-center'>
+        <div id="about" className='pt-11 flex justify-center'>
             <div className="bg-base-200 rounded-md">
                 <div className="hero-content flex-col lg:flex-row max-w-4xl">
                     <Image src="/../public/images/galvan-alex.jpeg" width={300} height={200} alt="alex galvan" className="max-w-sm rounded-lg shadow-2xl" />
