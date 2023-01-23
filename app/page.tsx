@@ -6,9 +6,7 @@ import About from '../components/About'
 import NavBar from '../components/NavBar'
 import Card from '../components/Card'
 import { projects } from '../projects'
-import Footer from '../components/Footer'
-
-
+import Contact from '../components/Contact'
 type projectt = {
   imagePath: string
   title: string
@@ -27,7 +25,7 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className="relative">
       <NavBar />
       <Hero />
       <About />
@@ -82,7 +80,11 @@ export default function Home() {
             description={project.description} />
         ))}
       </div>
-      <Footer />
+      <div className="fixed right-10 bottom-10">
+        <Contact />
+      </div>
+
+
     </div>
   )
 }
