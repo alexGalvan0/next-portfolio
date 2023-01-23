@@ -18,7 +18,7 @@ const Card: React.FC<project> = (props) => {
                     <h2 className="card-title">{props.title}</h2>
                     <p>{props.description}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary"><a target="_blank" href={props.liveDemo}>Demo</a></button>
+                        <button className="btn btn-primary"><a target="_blank"rel="noreferrer" href={props.liveDemo}>Demo</a></button>
                     </div>
                 </div>
             </div>
