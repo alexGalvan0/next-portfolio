@@ -7,13 +7,20 @@ import NavBar from '../components/NavBar'
 import Card from '../components/Card'
 import { projects } from '../projects'
 import Contact from '../components/Contact'
-type projectt = {
-  imagePath: string
-  title: string
-  description: string
-  liveDemo: string
-  repoLink: string
+
+
+type projectsType = {
+    key:any
+    imagePath: string
+    title: string
+    description: string
+    liveDemo: string
+    repoLink?: string
+  
+
 }
+
+
 
 export default function Home() {
 
@@ -60,7 +67,7 @@ export default function Home() {
 
 
       <div id='projects' className="flex flex-wrap justify-center mt-10 gap-4 align-middle md:px-50 mb-72">
-        {projects?.map((project) => (
+        {projects?.map((project:any) => (
           <Card key={project.title}
             title={project.title}
             liveDemo={project.liveDemo}

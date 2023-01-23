@@ -8,8 +8,7 @@ type project = {
     repoLink?: string
 }
 
-
-const Card: React.FC<project> = (props) => {
+const Card = (props:project) => {
     return (
         <div>
             <div className="card w-96 bg-base-200 shadow-xl">
