@@ -1,11 +1,24 @@
+"use client"
 import React from 'react'
+import { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import NavBar from '../components/NavBar'
+
 export default function Home() {
+
+  const [theme, setTheme] = useState<string>('light');
+
+  useEffect(() => {
+    document.querySelector<any>('html').setAttribute('data-theme', theme)
+  }, [theme])
+
+
   return (
-    <div data-theme="dark">
-    <Hero />
-    <About />
+    <div>
+      <NavBar setTheme={setTheme} />
+      <Hero />
+      <About />
 
     </div>
   )

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function NavBar() {
     const [theme, setTheme] = useState<string>('dark')
@@ -10,7 +10,11 @@ function NavBar() {
     const toggleTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark");
         console.log(theme)
-      };
+    };
+    useEffect(() => {
+        document.querySelector<any>('html').setAttribute('data-theme', theme)
+    }, [theme])
+
     return (
         <div className='sticky top-0 z-50'>
             <div className="navbar bg-base-100">
