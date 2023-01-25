@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 function NavBar() {
-    const [theme, setTheme] = useState<string>('dark')
+    const [theme, setTheme] = useState<string>('luxury')
 
     const toggleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        setTheme(theme === "luxury" ? "light" : "luxury");
         console.log(theme)
     };
     useEffect(() => {

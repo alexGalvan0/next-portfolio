@@ -23,7 +23,7 @@ type projectsType = {
 
 export default function Home() {
 
-  const [theme, setTheme] = useState<string>('dark');
+  const [theme, setTheme] = useState<string>('luxury');
 
   useEffect(() => {
     document.querySelector<any>('html').setAttribute('data-theme', theme)
