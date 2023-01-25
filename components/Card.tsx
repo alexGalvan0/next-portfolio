@@ -12,7 +12,7 @@ const Card = (props:project) => {
     return (
         <div className='h-50'>
             <div className="card w-96 bg-base-200 shadow-xl">
-                <figure className='h-20'><img src={props.imagePath} alt="Shoes" /></figure>
+                <figure className='h-44'><img src={props.imagePath} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{props.title}</h2>
                     <p className='h-20'>{props.description}</p>
