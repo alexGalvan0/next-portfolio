@@ -25,4 +25,4 @@ const Card = (props:project) => {
     )
 }
 
-export default Card
+export default Card 
