@@ -8,24 +8,21 @@ import Card from '../components/Card'
 import { projects } from '../projects'
 import Contact from '../components/Contact'
 
-type projectsType = {
 
-  imagePath: string
-  title: string
-  description: string
-  liveDemo: string
-  repoLink?: string
+
+type Projects = {
+  Project: {
+    title: string
+    liveDemo: string
+    imagePath: string
+    description: string
+    repoLink? :string
+  }
 }
-
-type projectType ={
-  proType : projectsType[]
-}
-
-
-
-
 
 export default function Home() {
+
+  console.log(projects)
 
   const [theme, setTheme] = useState<string>('luxury');
 
@@ -33,7 +30,6 @@ export default function Home() {
     document.querySelector<HTMLHtmlElement>('html')!.setAttribute('data-theme', theme)
   }, [theme])
 
-  console.log(projects)
   return (
     <div className="relative">
 
