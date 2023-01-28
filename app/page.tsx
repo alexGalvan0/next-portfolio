@@ -9,15 +9,19 @@ import { projects } from '../projects'
 import Contact from '../components/Contact'
 
 type projectsType = {
-  key: any
+
   imagePath: string
   title: string
   description: string
   liveDemo: string
   repoLink?: string
-
-
 }
+
+type projectType ={
+  proType : projectsType[]
+}
+
+
 
 
 
@@ -26,10 +30,10 @@ export default function Home() {
   const [theme, setTheme] = useState<string>('luxury');
 
   useEffect(() => {
-    document.querySelector<any>('html').setAttribute('data-theme', theme)
+    document.querySelector<HTMLHtmlElement>('html')!.setAttribute('data-theme', theme)
   }, [theme])
 
-
+  console.log(projects)
   return (
     <div className="relative">
 
@@ -67,8 +71,8 @@ export default function Home() {
 
 
       <div id='projects' className="flex flex-wrap justify-center mt-10 gap-4 align-middle md:px-50 mb-72">
-        {projects?.map((project: any) => (
-          <Card key={project.title}
+        {projects.map((project:any, index) => (
+          <Card key={index}
             title={project.title}
             liveDemo={project.liveDemo}
             imagePath={project.imagePath}
